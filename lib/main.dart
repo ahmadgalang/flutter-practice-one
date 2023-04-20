@@ -7,7 +7,7 @@ void main() {
       appBar: AppBar(
         title: const Text('My Apps'),
       ),
-      body: const GradientContainer(),
+      body:  const GradientContainer()
     ),
   ));
 }
