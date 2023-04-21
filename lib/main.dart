@@ -7,7 +7,10 @@ void main() {
       appBar: AppBar(
         title: const Text('My Apps'),
       ),
-      body: const GradientContainer(),
+      body: const GradientContainer(
+        Color.fromARGB(123, 222, 145, 222),
+        Color.fromARGB(123, 222, 145, 222),
+      ),
     ),
   ));
 }
