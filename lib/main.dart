@@ -8,8 +8,8 @@ void main() {
         title: const Text('My Apps'),
       ),
       body: const GradientContainer(
-        Color.fromARGB(123, 222, 145, 222),
-        Color.fromARGB(123, 222, 145, 222),
+        Color.fromARGB(255, 34, 0, 255),
+        Color.fromARGB(255, 5, 9, 255),
       ),
     ),
   ));
