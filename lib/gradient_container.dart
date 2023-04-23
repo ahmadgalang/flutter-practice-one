@@ -8,10 +8,14 @@ class GradientContainer extends StatelessWidget {
 
   const GradientContainer.purple({super.key})
       : color1 = const Color.fromARGB(255, 90, 7, 233),
-        color2 = const Color.fromARGB(255, 232, 0, 0);
+        color2 = const Color.fromARGB(255, 186, 0, 0);
 
   final Color color1;
   final Color color2;
+
+  void rollDice() {
+    //
+  }
 
   @override
   Widget build(context) {
@@ -23,8 +27,15 @@ class GradientContainer extends StatelessWidget {
             end: bottomCenter),
       ),
       child: Center(
-        child: Image.asset('assets/images/dice-2.png', width: 250,),
-      ),
+          child: Column(
+        children: [
+          Image.asset(
+            'assets/images/dice-2.png',
+            width: 250,
+          ),
+          TextButton(onPressed: rollDice, child: const Text('Klik Disini!'))
+        ],
+      )),
     );
   }
 }
