@@ -27,15 +27,32 @@ class GradientContainer extends StatelessWidget {
             end: bottomCenter),
       ),
       child: Center(
-          child: Column(
-        children: [
-          Image.asset(
-            'assets/images/dice-2.png',
-            width: 250,
-          ),
-          TextButton(onPressed: rollDice, child: const Text('Klik Disini!'))
-        ],
-      )),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(
+              'assets/images/dice-2.png',
+              width: 200,
+            ),
+            const SizedBox(height: 50),
+            TextButton(
+              onPressed: rollDice,
+              style: TextButton.styleFrom(
+                padding: const EdgeInsets.only(top: 20),
+                foregroundColor: Colors.blueAccent,
+                textStyle: const TextStyle(
+                  fontSize: 18,
+                ),
+              ),
+              child: const Text(
+                'Klik Disini!',
+                textAlign: TextAlign.justify,
+              ),
+            )
+          ],
+        ),
+      ),
     );
   }
 }
